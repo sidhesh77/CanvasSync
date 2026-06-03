@@ -1,7 +1,7 @@
 services:
   - type: web
     name: canvas-sync-web
-    runtime: image
+    env: docker
     repo: https://github.com/sidhesh77/CanvasSync
     branch: main
     dockerfilePath: ./apps/web/Dockerfile
@@ -13,7 +13,7 @@ services:
 
   - type: web
     name: canvas-sync-http-server
-    runtime: image
+    env: docker
     repo: https://github.com/sidhesh77/CanvasSync
     branch: main
     dockerfilePath: ./apps/http-server/Dockerfile
@@ -29,7 +29,7 @@ services:
 
   - type: web
     name: canvas-sync-ws-server
-    runtime: image
+    env: docker
     repo: https://github.com/sidhesh77/CanvasSync
     branch: main
     dockerfilePath: ./apps/ws-server/Dockerfile
